@@ -1,9 +1,8 @@
 {
-    "plugins": {
-        "postcss-preset-env": {
-            "stage": 0,
-        },
-        "autoprefixer": true,
-        "postcss-clean": true,
-    }
+  "plugins": {
+    "postcss-preset-env": {
+      "stage": 0
+    },
+    "postcss-clean": true
+  }
 }
