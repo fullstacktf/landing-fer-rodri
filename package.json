@@ -1,0 +1,43 @@
+{
+  "name": "fmonper1-github-page",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.html",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "bulma": "^0.8.0",
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1",
+    "parcel-plugin-imagemin": "^4.0.0",
+    "postcss-cli": "^7.1.0",
+    "stylelint": "^13.1.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "lodash-es": "^4.17.15",
+    "parcel-bundler": "^1.12.4",
+    "particles.js": "^2.0.0",
+    "postcss-clean": "^1.1.0",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel serve $npm_package_main --open",
+    "build": "rm -rf dist && parcel build $npm_package_main --no-source-maps --public-url ./$npm_package_name",
+    "build-alt": "parcel build $npm_package_main",
+    "deploy": "gh-pages -d dist",
+    "css-build": "node-sass --omit-source-map-url src/sass/style.scss src/css/style.css",
+    "css-watch": "npm run css-build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmonper1/bulma-personal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmonper1/bulma-personal/issues"
+  },
+  "homepage": "https://github.com/fmonper1/bulma-personal#readme"
+}

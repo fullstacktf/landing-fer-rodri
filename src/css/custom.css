@@ -1,0 +1,11 @@
+.hero-foot nav {
+  display: flex;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+}

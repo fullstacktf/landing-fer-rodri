@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@import "../../node_modules/bulma/bulma.sass";
+
+.hero {
+  background: #333 url(../assets/spacex.jpg) center center;
+  background-size: cover;
+}
+
+#navbarMenuHeroA .navbar-start {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#my-hero-body {
+  //   align-items: flex-start;
+  flex-grow: 4;
+}
+
+.hero-foot {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.hero-foot .columns:last-child {
+  margin-bottom: 0;
+}
