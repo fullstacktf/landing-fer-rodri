@@ -25,7 +25,8 @@
   "scripts": {
     "dev": "parcel serve $npm_package_main --open",
     "dev-win": "parcel serve %npm_package_main% --open",
-    "build-windows": "parcel build ./%npm_package_main% -d build --public-url /%npm_package_name%/",
+    "build-win": "parcel build ./%npm_package_main% -d build --public-url /%npm_package_name%/",
+    "postbuild-win": "gh-pages -d build",
     "deploy": "gh-pages -d build",
     "prebuild": "rm -rf dist build",
     "build": "parcel build ./$npm_package_main -d build --public-url /$npm_package_name/",

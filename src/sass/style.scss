@@ -1,11 +1,23 @@
 @charset "utf-8";
 
 @import "../../node_modules/bulma/bulma.sass";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
+
+h1,
+h2,
+h3 {
+  font-family: "Titillium Web", sans-serif;
+}
 
 .hero {
   background: #23153c;
 }
 
+.rounded-img {
+  height: 260px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
 #navbarMenuHeroA .navbar-start {
   display: flex;
   justify-content: center;
